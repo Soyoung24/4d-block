@@ -22,7 +22,7 @@ def image_loader(image_name):
     image = image.unsqueeze(0)  #this is for VGG, may not be needed for ResNet
     return image #.to(device)  #assumes that you're using GPU
 
-## 데이타 체크
+## 데이터 체크
 import torchvision
 #import matplotlib.pyplot as plt
 #def imshow(inp, title=None):
@@ -88,8 +88,6 @@ def load_reg_model():
 
 #     reg_model = reg_model.to(device)
     return reg_model
-
-
 
 def model_inference(image_filename):
     image = image_loader(image_filename)
